@@ -1,7 +1,6 @@
 pipeline {
   agent any
   stages {
-    
     stage(' build') {
       steps {
         echo 'build completed'
@@ -33,6 +32,7 @@ pipeline {
 
     stage('deploy') {
       steps {
+        input 'sure?'
         echo 'deploy completed'
       }
     }
