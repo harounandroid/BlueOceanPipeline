@@ -32,7 +32,6 @@ pipeline {
 
     stage('deploy') {
       steps {
-        input 'sure?'
         echo 'deploy completed'
       }
     }
